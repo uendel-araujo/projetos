@@ -1,0 +1,435 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PARTE SUPERIOR DO SITE - LOGO E MENU */
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav .active a,
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+}
+
+/* SEGUNDA PARTE DO SITE - CONTEUDO DO BANNER LOGO ABAIXO DO HEADER , CONTÉM TANTO BannerHeadline QUANTO BannerOptions*/
+#banner{
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_headline h1{
+    color: white;
+    font-size: 70px;
+    text-shadow: 1px 2px black;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+}
+.banner_headline h2{
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 2px black;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.banner_options
+{
+    height: 210px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+
+}
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+.banner_options_title{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.banner_options_desc{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.banner_options_desc_hours
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed white;
+    margin-bottom: 20px;
+}
+.banner_options_desc_hours .days,
+.banner_options_desc_hours .hours{
+    margin-bottom: 5px;
+}
+.banner_options a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.banner_options a:hover{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*TERCEIRA PARTE DO SITE - CONTEÚDO GERAL COMO ULTIMAS NOTICIAS E DEPARTAMENTOS */
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+}
+.widget_title_bar{
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #39aae1;
+}
+.widget_body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.photos_departments{
+    width: 150px;
+    height: 150px;
+    background-color: #39aae1;
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 25px;
+}
+article a{
+    text-decoration: none;
+}
+article .news_date{
+    display: flex;
+    margin-bottom: 30px;
+}
+article .news_posted_at
+{
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 1px;
+}
+article .news_coments{
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 1px;
+}
+article .news_photo img{
+    width: 100%;
+    height: auto;
+}
+article .news_title{
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+article .news_resume{
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.make_appoint_content{
+    display: flex;
+    flex-direction: column;
+}
+.make_appoint_text
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.make_appoint_contacts{
+    display: flex;
+    flex-direction: column;
+}
+.make_appoint_contacts_contact{
+    display: flex;
+    font-size: 14px;
+    border-bottom: 1px solid dimgray;
+    margin-bottom: 10px;
+}
+.image_contact{
+    width: 15px;
+    height: 15px;
+    background-color: #39aae1;
+    margin-right: 10px;
+}
+.image_contact,
+.person_contact{
+    margin-bottom: 10px;
+}
+/*GERENCIAMENTO DO FOOTER ( RODAPÉ ) DO SITE */
+footer{
+    background-color: #1e1e1e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer_menu{
+    display: flex;
+    flex: 1;
+}
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footer_menu1,
+.footer_menu2,
+.footer_menu3{
+    flex: 1;
+    padding: 20px;
+}
+.footer_menu1{
+    background-color: #39aae1;
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu2{
+    background-color: #0079c7;
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu3{
+    background-color: #2b4c99;
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu_titulo{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.footer_menu_desc{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.last_tweets_post{
+    font-size: 13px;
+    color: #5c5c5c;
+    display: flex;
+    margin-right: 5px;
+}
+.arrow{
+    margin-right: 5px;
+}
+.last_tweets_post_day{
+    color: #39aae1;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 19px;
+    margin-bottom: 15px;
+}
+.color{
+    color: white;
+}
+.footer_area{
+    display: flex;
+}
+.footer_area_item{
+    flex: 1;
+}
+footer .widget_title_text{
+    color: white;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    font-size: 13px;
+    color: #5c5c5c;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.content_adress_contact{
+    display: flex;
+    justify-content: space-between;
+    color: #5c5c5c;
+    font-size: 13px;
+    margin-top: 25px;
+}
+.content_adress_contact_adress{
+    flex: 1;
+}
+.content_adress_contact_contacts{
+    flex: 1;
+}
+.menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menu_mobile_line{
+    height: 4px;
+    background-color: #39aae1;
+}
+/*PARTE DE CONFIGURAÇÃO DA RESPONSIVIDADE DO SITE*/
+@media (max-width:670px){
+    .container{
+        flex-direction: column;
+    }
+    #banner{
+        height: auto;
+    }
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 54px;
+    }
+    .banner_headline h2{
+        font-size: 18px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    #geral{
+        margin-left: 20px;
+    }
+    .mobile_fit
+    {
+        margin-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .footer_copy{
+        margin-left: 20px;
+    }
+    header{
+        height: auto;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+}
