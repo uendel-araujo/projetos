@@ -1,0 +1,2 @@
+Olá, meu nome é Uendel Araujo, sou programador WEB e MOBILE e neste repositório trago todos os projetos dos quais criei.
+Cada projeto encontra-se separado por pastas para uma melhor organização e facilitação de acesso aos usuários e clientes que desejarem visualizar o meu trabalho como programador e os códigos utilizados por mim.
