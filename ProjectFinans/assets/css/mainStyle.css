@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.bg-white{
+    background-color: white;
+}
+.caixa{
+    padding: 60px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/** INICIO DA CONFIGURAÇÃO DO CABEÇALHO DO SITE **/
+header a img{
+  width: 144px;
+}
+.lista-topo{
+    margin-left: auto;
+}
+.lista-topo .btn{
+    font-weight: bold;
+}
+.paginas-link{
+    font-size: 18px;
+    color: white !important;
+    display: inline-block;
+    padding: 6px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.paginas-link:hover{
+    
+    background-color: white;
+    color:#ffc107 !important;
+    border-radius: 6px;
+}
+/** INICIO DA CONFIGURAÇÃO DA SEÇÃO ABAIXO DO MENU SUPERIOR E DA LOGO **/
+#home{
+    background-color: #ffc107;
+    color: white;
+}
+.textos-site{
+    display: flex;
+    align-items: center;
+}
+/** CONFIGURAÇÃO DO FOOTER **/
+footer{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+footer p a{
+    margin-right: 15px;
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 10px;
+}
+footer p a:hover{
+    color: #ffc107;
+}
