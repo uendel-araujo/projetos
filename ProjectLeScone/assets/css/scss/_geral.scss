@@ -1,0 +1,36 @@
+body{
+    background: $cor-background-principal;
+    border: 10px solid $cor-borda-principal;
+    color: $cor-tipografia-logo;
+    @include device(s){
+        border: none;
+    }
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+p{
+    @include tipo-1(18);
+}
+
+.titulo{
+    @include tipo-1(18);
+    text-transform: uppercase;
+    @include device(s){
+        margin-bottom: 30px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 75%;
+        float: right;
+        height: 2px;
+        margin-top: 15px;
+        background: $cor-tipografia-logo;
+        @include device(m){
+            width: 60%;
+        }
+    }
+}

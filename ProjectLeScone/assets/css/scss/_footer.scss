@@ -1,0 +1,24 @@
+footer {
+    padding: 20px 0;
+    background: $cor-tipografia-logo;
+    @include box-shadow(0 0 0 10px $cor-tipografia-logo);
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        @include device(s){
+            flex-direction: column;
+        }
+    }      
+    p{
+        color: $cor-background-principal;
+        @include device(s){
+            font-size: 14px;
+        }
+    }
+    a img{
+        @include device(s){
+            margin: 20px auto;
+        }
+    }
+}
